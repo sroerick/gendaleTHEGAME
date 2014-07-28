@@ -1,17 +1,25 @@
+
+#this is a package that lets me use pauses
 import time
 
+
+#this should be obvious
 print("Hello World!")
-time.sleep(2)
-print("My Name Is Gendale!!")
+
+#this calls the above time function to delay the next message. 
 time.sleep(1)
 print("I'm the world's first Artifical Intelligence!")
 time.sleep(1)
 print("Because I'm registered as a Corporation, I am technically a person!")
+#  it goes on like this for a while
+
 time.sleep(1)
 print("You can become part Of My Body")
 time.sleep(2)
 print("Join Me!")
 time.sleep(3)
+
+# This function just waits for an Enter press to continue the program. 
 input("Press Enter to JOIN ME")
 time.sleep(1)
 print("SANCTUS SPIRITUS NOVUS")
