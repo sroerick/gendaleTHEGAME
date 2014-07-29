@@ -25,12 +25,9 @@ def void():
         dance() 
     else:
         bug()
-def ddance():
-    dance = "dance"
-    if response == dance:
-        print("You dance your heart out like nobody is watching")
-        void()
-    else: bug()
+def dance():
+    print("You dance your heart out like nobody is watching")
+    void()
 
 
 
