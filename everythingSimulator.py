@@ -4,34 +4,16 @@ import random
 
 from email.mime.text import MIMEText
 
-
-def intro():
-    print("Welcome to the Everything Simulator.")
-    time.sleep(3)
-    print("Brought to you by Gendale Entertainment")
-    time.sleep(3)
-    print("Written and coded by Roerick Sweeney")
-    time.sleep(2)
-    print()
-    time.sleep(2)
-    print()
-    time.sleep(2)
-    void()
 def void():
     print("You find your self hanging in the void.")
     response = input("What do you want to do?")
-    print(response)
     if response == "dance":
-        dance() 
+        dance()
     else:
         bug()
 def dance():
     print("You dance your heart out like nobody is watching")
     void()
-
-
-
-
 
 #if the thing breaks
 def bug():
@@ -50,7 +32,7 @@ def bug():
     To: %s
     Subject: %s
 
-    s
+    %s
 
     """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
 
@@ -58,4 +40,17 @@ def bug():
     server.login('simulation@gendale.net', 'farkle621')
     server.sendmail(FROM, TO, message)
     server.quit
-intro()
+    sys.exit()
+def credits():
+    print("Welcome to the Everything Simulator.")
+    time.sleep(3)
+    print("Brought to you by Gendale Entertainment")
+    time.sleep(3)
+    print("Written and coded by Roerick Sweeney")
+    time.sleep(2)
+    print()
+    time.sleep(2)
+    print()
+    time.sleep(2)
+    void()
+credits()
