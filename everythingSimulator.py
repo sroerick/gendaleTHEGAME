@@ -8,16 +8,19 @@ def void():
     print("You find your self hanging in the void.")
     response = input("What do you want to do?")
     if response == "dance":
-        dance()
+        dance(response)
     else:
-        bug()
-def dance():
+        bug(response)
+def dance(response):
     print("You dance your heart out like nobody is watching")
     void()
 
 #if the thing breaks
-def bug():
+def bug(response):
     print(response + " will be in the next release!")
+
+    SERVER = 'mail.gendale.net'
+    #SERVER = 'mail.charter.net'
 
     FROM ='simulation@gendale.net'
 
@@ -36,11 +39,10 @@ def bug():
 
     """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
 
-    server = smtplib.SMTP('mail.gendale.net')
+    server = smtplib.SMTP(SERVER)
     server.login('simulation@gendale.net', 'farkle621')
     server.sendmail(FROM, TO, message)
     server.quit
-    sys.exit()
 def credits():
     print("Welcome to the Everything Simulator.")
     time.sleep(3)
