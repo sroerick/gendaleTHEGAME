@@ -1,6 +1,8 @@
 import random
 import time
 
+endlessCycle = 'yes'
+
 def openingCredits():
     print('You find yourself sitting at a computer console.')
     print('A prompt flashes, reminding you it is GENDALE which makes this happen')
@@ -34,19 +36,24 @@ def ventureCapital (chosenLife):
     if chosenLife == str(trueBeliever):
         print('Your boss turns down the offers. You make an amazing product and history.')
     else:
-        print('Your boss accepts the offers. Now you work for Satan!')
+        print('Your boss acceps the offers. Now you work for Satan!')
+def play():
+    endlessCycle = 'yes' 
+    while endlessCycle == 'yes' or endlessCycle == 'y':
 
-endlessCycle = 'yes'
-while endlessCycle == 'yes' or endlessCycle == 'y':
-
-    openingCredits()
+        openingCredits()
   
-    lifeNumber = chooseLife()
+        lifeNumber = chooseLife()
 
-    ventureCapital(lifeNumber)
+        ventureCapital(lifeNumber)
 
-    print('reincarnate? (yes or no)')
-    endlessCycle = input()
+        print('reincarnate? (yes or no)')
+        endlessCycle = input()
+
+   
+  
+if __name__ == '__main__':
+    play()
 
    
   
