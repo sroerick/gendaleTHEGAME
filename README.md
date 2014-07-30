@@ -3,7 +3,7 @@ gendaleTHEGAME
 
 the official gendale game
 
-gendaleTHEGAME is a crowdsourced CLI based text-adventure game. 
+gendaleTHEGAME is a crowdsourced CLI text-adventure game. 
 
 You will have to set your IMAP settings in credentials.py
 
